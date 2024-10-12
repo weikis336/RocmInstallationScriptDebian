@@ -105,6 +105,10 @@ EOF
       echo "$rocm_package is already installed"
     fi
   done
+  sudo usermod -aG render $(whoami)
+  echo 'SUBSYSTEM=="kfd", KERNEL=="kfd", TAG+="uaccess", TAG+="seat"' | sudo tee /etc/udev/rules.d/70-kfd.rules 
+  sudo udevadm control --reload-rules
+  sudo udevadm trigger
 }
 
 # Execute the selected action
