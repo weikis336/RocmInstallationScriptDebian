@@ -90,13 +90,6 @@ EOF
   # Update PATH for ROCm binaries
   export PATH=$PATH:/opt/rocm/bin
 
-  # Verify installation
-  dkms status
-  /opt/rocm/bin/rocminfo
-  /opt/rocm/bin/clinfo
-
-  echo "Post-installation actions completed."
-
   # ROCm packages to install
   rocm_packages=("rocm-opencl" "rocm-opencl-dev" "rocminfo" "rocm-utils" "rocm-smi" "rocm-smi-lib" "rocm-opencl-sdk" "rocm-ml-sdk" "rocm-ml-libraries" "rocm-llvm" "rocm-libs" "rocm-hip-sdk" "rocm-hip-runtime-dev" "rocm-hip-runtime" "rocm-hip-libraries" "rocm-gdb" "rocm-device-libs" "rocm-dev" "rocm-debug-agent" "rocm-dbgapi" "rocm-cmake" "miopen-hip")
 
