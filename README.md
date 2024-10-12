@@ -5,3 +5,6 @@ Install Rocm on debian its a bit treaky beacause there is no package related on 
 Because of that blender HIP or other apps are a bit hard to set up
 
 Special thanks to https://gitlab.com/gee-one/debian-12-rocm
+
+
+### The main script its the RocMinstall.sh
